@@ -1,0 +1,306 @@
+[
+  {
+    "university": "Đại học Bách khoa (DUT)",
+    "universityCode": "DDK",
+    "major": "Công nghệ thông tin",
+    "majorCode": "7480201B",
+    "score": 27.20,
+    "methods": ["THPT"]
+  },
+  {
+    "university": "Đại học Bách khoa (DUT)",
+    "universityCode": "DDK",
+    "major": "Công nghệ thông tin",
+    "majorCode": "7480201A",
+    "score": 22.50,
+    "methods": ["THPT"]
+  },
+  {
+    "university": "Đại học Bách khoa (DUT)",
+    "universityCode": "DDK",
+    "major": "Kỹ thuật điện tử viễn thông (CTTT Việt - Mỹ)",
+    "majorCode": "7520207VM",
+    "score": 23.09,
+    "methods": ["THPT"]
+  },
+  {
+    "university": "Đại học Bách khoa (DUT)",
+    "universityCode": "DDK",
+    "major": "Hệ thống nhúng và IoT (CTTT Việt - Mỹ)",
+    "majorCode": "7480118VM",
+    "score": 23.68,
+    "methods": ["THPT"]
+  },
+  {
+    "university": "Đại học Bách khoa (DUT)",
+    "universityCode": "DDK",
+    "major": "Hệ thống nhúng (PFIEV)",
+    "majorCode": "PFIEV",
+    "score": 21.38,
+    "methods": ["THPT"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Sư phạm Kỹ thuật công nghiệp (CN Công nghệ thông tin)",
+    "majorCode": "7140214",
+    "score": 21.44,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ thông tin",
+    "majorCode": "7480201",
+    "score": 20.75,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật cơ khí (Cơ khí chế tạo)",
+    "majorCode": "7510201",
+    "score": 21.10,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật cơ điện tử",
+    "majorCode": "7510203",
+    "score": 21.31,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật ô tô",
+    "majorCode": "7510205",
+    "score": 22.01,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật ô tô (Ô tô điện)",
+    "majorCode": "7510205A",
+    "score": 22.35,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật ô tô (Tại Kon Tum)",
+    "majorCode": "7510205KT",
+    "score": 18.75,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật nhiệt (Nhiệt - Điện lạnh)",
+    "majorCode": "7510206",
+    "score": 20.20,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật điện, điện tử (KT Điện tử)",
+    "majorCode": "7510301A",
+    "score": 21.27,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật điện, điện tử (KT Điện)",
+    "majorCode": "7510301B",
+    "score": 21.07,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "majorCode": "7510302",
+    "score": 21.09,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật điện tử - viễn thông (Thiết kế vi mạch)",
+    "majorCode": "7510302A",
+    "score": 21.85,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "majorCode": "7510303",
+    "score": 22.58,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học Sư phạm Kỹ thuật (UTE)",
+    "universityCode": "DSK",
+    "major": "Công nghệ kỹ thuật điều khiển và tự động hóa (Tại Kon Tum)",
+    "majorCode": "7510303KT",
+    "score": 18.25,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ truyền thông (Cử nhân)",
+    "majorCode": "7320106",
+    "score": 21.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Thiết kế Mỹ thuật số",
+    "majorCode": "7320106DA",
+    "score": 21.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Quản trị kinh doanh",
+    "majorCode": "7340101",
+    "score": 22.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Quản trị Logistics và chuỗi cung ứng số",
+    "majorCode": "7340101EL",
+    "score": 23.50,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Quản trị dịch vụ du lịch và lữ hành số",
+    "majorCode": "7340101ET",
+    "score": 23.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Quản trị dự án CNTT",
+    "majorCode": "7340101IM",
+    "score": 20.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Marketing",
+    "majorCode": "7340115",
+    "score": 23.25,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ tài chính",
+    "majorCode": "7340205",
+    "score": 22.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Trí tuệ nhân tạo (Kỹ sư)",
+    "majorCode": "7480107",
+    "score": 21.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Phân tích dữ liệu",
+    "majorCode": "7480107DA",
+    "score": 21.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ kỹ thuật máy tính (Kỹ sư)",
+    "majorCode": "7480108",
+    "score": 20.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Kỹ thuật phần mềm ô tô",
+    "majorCode": "7480108AS",
+    "score": 18.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ kỹ thuật máy tính (Cử nhân)",
+    "majorCode": "7480108B",
+    "score": 18.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ KT máy tính – Thiết kế vi mạch",
+    "majorCode": "7480108IC",
+    "score": 24.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ thông tin (Kỹ sư)",
+    "majorCode": "7480201",
+    "score": 20.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ thông tin (Đặc thù)",
+    "majorCode": "7480201DT",
+    "score": 18.50,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ Game",
+    "majorCode": "7480201GT",
+    "score": 19.00,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "Công nghệ thông tin (Cử nhân)",
+    "majorCode": "7480201B",
+    "score": 18.50,
+    "methods": ["THPT", "COMBINED"]
+  },
+  {
+    "university": "Đại học CNTT & TT Việt - Hàn (VKU)",
+    "universityCode": "VKU",
+    "major": "An toàn thông tin (Kỹ sư)",
+    "majorCode": "7480202",
+    "score": 19.00,
+    "methods": ["THPT", "COMBINED"]
+  }
+]

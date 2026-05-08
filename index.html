@@ -5,372 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xếp Nguyện Vọng Ảo Khối X06 (Năm 2025)</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-    --bg-color: #0f172a;
-    --card-bg: rgba(30, 41, 59, 0.7);
-    --border-color: rgba(255, 255, 255, 0.1);
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-blue: #3b82f6;
-    --accent-purple: #8b5cf6;
-    --success: #10b981;
-    --warning: #f59e0b;
-    --danger: #ef4444;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-primary);
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
-}
-
-/* Background animated elements */
-.background-elements {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(100px);
-    opacity: 0.5;
-    animation: float 20s infinite ease-in-out alternate;
-}
-
-.circle-1 {
-    width: 400px;
-    height: 400px;
-    background: var(--accent-blue);
-    top: -100px;
-    left: -100px;
-}
-
-.circle-2 {
-    width: 500px;
-    height: 500px;
-    background: var(--accent-purple);
-    bottom: -200px;
-    right: -100px;
-    animation-delay: -5s;
-}
-
-.circle-3 {
-    width: 300px;
-    height: 300px;
-    background: #0ea5e9;
-    top: 40%;
-    left: 40%;
-    animation-delay: -10s;
-}
-
-@keyframes float {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(50px, 50px); }
-}
-
-/* Main Container */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.header h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    background: linear-gradient(to right, #60a5fa, #c084fc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0.5rem;
-}
-
-.subtitle {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.5rem;
-}
-
-.school-list {
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    background: rgba(255, 255, 255, 0.05);
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    border: 1px solid var(--border-color);
-}
-
-/* Glassmorphism Forms */
-.calculator-glass {
-    background: var(--card-bg);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid var(--border-color);
-    border-radius: 1.5rem;
-    padding: 2.5rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    margin-bottom: 3rem;
-    transition: transform 0.3s ease;
-}
-
-.calculator-glass:hover {
-    transform: translateY(-5px);
-}
-
-.input-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.priority-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.input-group label {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #e2e8f0;
-}
-
-.input-group input, .input-group select {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid var(--border-color);
-    color: white;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-    outline: none;
-}
-
-.input-group input:focus, .input-group select:focus {
-    border-color: var(--accent-blue);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
-}
-
-.submit-btn {
-    width: 100%;
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-    color: white;
-    border: none;
-    padding: 1.25rem;
-    border-radius: 0.75rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
-}
-
-.submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
-}
-
-.submit-btn:active {
-    transform: translateY(1px);
-}
-
-/* Results Section */
-.results-container {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.results-container.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    pointer-events: none;
-    display: none;
-}
-
-.total-score-card {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
-    border: 1px solid rgba(139, 92, 246, 0.3);
-    border-radius: 1.5rem;
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    backdrop-filter: blur(10px);
-}
-
-.total-score-card h2 {
-    color: var(--text-secondary);
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-}
-
-.score-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-#finalScore {
-    font-size: 4rem;
-    font-weight: 800;
-    color: white;
-    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
-}
-
-.score-details {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-}
-
-/* Categories */
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.category {
-    background: var(--card-bg);
-    backdrop-filter: blur(16px);
-    border: 1px solid var(--border-color);
-    border-radius: 1.25rem;
-    padding: 1.5rem;
-}
-
-.category h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.category h3::before {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.category.safe { border-top: 4px solid var(--success); }
-.category.safe h3::before { background-color: var(--success); }
-.category.safe h3 { color: var(--success); }
-
-.category.match { border-top: 4px solid var(--warning); }
-.category.match h3::before { background-color: var(--warning); }
-.category.match h3 { color: var(--warning); }
-
-.category.reach { border-top: 4px solid var(--danger); }
-.category.reach h3::before { background-color: var(--danger); }
-.category.reach h3 { color: var(--danger); }
-
-.cat-desc {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    line-height: 1.4;
-}
-
-.major-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.major-item {
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 1rem;
-    border-radius: 0.75rem;
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.major-item:hover {
-    transform: translateX(5px);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.major-name {
-    font-weight: 600;
-    color: white;
-    margin-bottom: 0.25rem;
-}
-
-.major-school {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.5rem;
-}
-
-.major-score {
-    display: inline-block;
-    font-size: 0.85rem;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    color: #e2e8f0;
-}
-
-.empty-state {
-    text-align: center;
-    color: var(--text-secondary);
-    font-style: italic;
-    padding: 1rem 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2.5rem;
-    }
-    
-    .calculator-glass {
-        padding: 1.5rem;
-    }
-    
-    .categories {
-        grid-template-columns: 1fr;
-    }
-}
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
     <div class="background-elements">
@@ -381,45 +17,95 @@ body {
 
     <main class="container">
         <header class="header">
-            <h1>Xếp Nguyện Vọng Ảo 2025</h1>
+            <h1>Xếp Nguyện Vọng Thử 2026</h1>
             <p class="subtitle">Dành riêng cho Khối X06 (Toán, Vật lí, Tin học)</p>
-            <p class="school-list">Trường: Bách Khoa (DUT), Sư phạm Kỹ thuật (UTE), Việt Hàn (VKU)</p>
+            <p class="school-list">Trường: Bách Khoa Đà Nẵng, Sư Phạm Kỹ Thuật, CNTT - Việt Hàn</p>
         </header>
+
+        <div class="method-tabs">
+            <button class="tab-btn active" data-method="THPT">Xét Điểm THPTQG</button>
+            <button class="tab-btn" data-method="COMBINED">Xét Kết Hợp (THPT + Học bạ)</button>
+        </div>
 
         <section class="calculator-glass">
             <form id="scoreForm">
+                <h3 class="section-title">Điểm Thi THPT Quốc Gia</h3>
                 <div class="input-grid">
                     <div class="input-group">
                         <label for="math">Điểm Toán</label>
-                        <input type="number" id="math" min="0" max="10" step="0.1" required placeholder="Ví dụ: 8.5">
+                        <input type="number" id="math" min="0" max="10" step="0.01" placeholder="Ví dụ: 8.5">
                     </div>
                     <div class="input-group">
                         <label for="physics">Điểm Vật lí</label>
-                        <input type="number" id="physics" min="0" max="10" step="0.1" required placeholder="Ví dụ: 8.0">
+                        <input type="number" id="physics" min="0" max="10" step="0.01" placeholder="Ví dụ: 8.0">
                     </div>
                     <div class="input-group">
-                        <label for="informatics">Điểm Tin học/Tiếng Anh</label>
-                        <input type="number" id="informatics" min="0" max="10" step="0.1" required placeholder="Ví dụ: 9.0">
+                        <label for="informatics">Điểm Tin học</label>
+                        <input type="number" id="informatics" min="0" max="10" step="0.01" placeholder="Ví dụ: 9.0">
                     </div>
                 </div>
 
+                <div id="hocbaSection" class="hidden">
+                    <h3 class="section-title">Chi Tiết Điểm Học Bạ</h3>
+                    <div class="input-grid" style="margin-bottom: 1rem;">
+                        <div class="input-group" style="grid-column: 1 / -1;">
+                            <label for="ratioSelect">Chọn Tỉ Lệ Xét Tuyển Kết Hợp</label>
+                            <select id="ratioSelect">
+                                <option value="VKU">60% Học bạ - 40% THPT (Chỉ xét VKU)</option>
+                                <option value="UTE">30% Học bạ - 70% THPT (Chỉ xét UTE)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="hocba-container">
+                        <div class="hocba-grid">
+                            <div class="hb-header">Lớp</div>
+                            <div class="hb-header">Toán</div>
+                            <div class="hb-header">Vật lí</div>
+                            <div class="hb-header">Tin học</div>
+                            <div class="hb-header">Trung bình</div>
+
+                            <div class="hb-label">Lớp 10</div>
+                            <input type="number" id="m10" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <input type="number" id="p10" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <input type="number" id="i10" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <div class="hb-avg" id="avg10">0.00</div>
+
+                            <div class="hb-label">Lớp 11</div>
+                            <input type="number" id="m11" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <input type="number" id="p11" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <input type="number" id="i11" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <div class="hb-avg" id="avg11">0.00</div>
+
+                            <div class="hb-label">Lớp 12</div>
+                            <input type="number" id="m12" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <input type="number" id="p12" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <input type="number" id="i12" class="hb-input" min="0" max="10" step="0.01" placeholder="0.0">
+                            <div class="hb-avg" id="avg12">0.00</div>
+                        </div>
+                    </div>
+
+                    <div id="liveTotalBreakdown" class="calculation-breakdown" style="margin-bottom: 1.5rem;">
+                        <strong style="color: var(--accent-blue);">Phân tích Điểm Cơ Sở:</strong><br>
+                        <div style="margin-left: 10px; margin-top: 5px; line-height: 1.6;">
+                            - Tổng Điểm Học bạ (chưa nhân hệ số): <strong id="rawHbScore">0.00</strong><br>
+                            - Tổng Điểm THPT (chưa nhân hệ số): <strong id="rawThptScore">0.00</strong><br>
+                            - Điểm Học bạ (sau khi nhân <span id="hbRatioText">60</span>%): <strong id="weightedHbScore" style="color: var(--success);">0.00</strong><br>
+                            - Điểm THPT (sau khi nhân <span id="thptRatioText">40</span>%): <strong id="weightedThptScore" style="color: var(--success);">0.00</strong><br>
+                            => <strong>Tổng Điểm Cơ Sở: <span id="liveAverageBase" style="color:var(--warning); font-size:1.1em;">0.00</span></strong>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-title">Thông Tin Ưu Tiên & Thưởng</h3>
                 <div class="priority-grid">
                     <div class="input-group">
-                        <label for="region">Khu Vực Ưu Tiên</label>
-                        <select id="region">
-                            <option value="0">Khu vực 3 (+0.0 điểm)</option>
-                            <option value="0.25">Khu vực 2 (+0.25 điểm)</option>
-                            <option value="0.5">Khu vực 2-NT (+0.5 điểm)</option>
-                            <option value="0.75">Khu vực 1 (+0.75 điểm)</option>
-                        </select>
+                        <label for="target">Điểm Đối Tượng Ưu Tiên (Tự nhập)</label>
+                        <input type="number" id="target" min="0" max="10" step="0.25" placeholder="Ví dụ: 1.0">
                     </div>
-                    <div class="input-group">
-                        <label for="target">Đối Tượng Ưu Tiên</label>
-                        <select id="target">
-                            <option value="0">Không có (+0.0 điểm)</option>
-                            <option value="1.0">Nhóm ƯT 2 (ĐT 5,6,7) (+1.0 điểm)</option>
-                            <option value="2.0">Nhóm ƯT 1 (ĐT 1,2,3,4) (+2.0 điểm)</option>
-                        </select>
+                    <div class="input-group hidden" id="hsgGroup">
+                        <label for="hsgPrize">Điểm Thưởng Thành Tích (Tự nhập)</label>
+                        <input type="number" id="hsgPrize" min="0" max="10" step="0.01" placeholder="Ví dụ: 2.0">
                     </div>
                 </div>
 
@@ -436,6 +122,7 @@ body {
                 <div class="score-display">
                     <span id="finalScore">0.00</span>
                     <span class="score-details" id="scoreDetails">(Điểm môn: 0 + Ưu tiên: 0)</span>
+                    <div id="calculationBreakdown" class="calculation-breakdown hidden"></div>
                 </div>
             </div>
 
@@ -454,12 +141,16 @@ body {
 
                 <div class="category reach">
                     <h3>Nguyện Vọng Thử Sức</h3>
-                    <p class="cat-desc">Có rủi ro nhưng đáng thử nghiệm (Điểm của bạn thấp hơn điểm chuẩn tối đa 1 điểm)</p>
+                    <p class="cat-desc">Có rủi ro nhưng đáng thử nghiệm (Điểm của bạn thấp hơn điểm chuẩn tối đa 1.5 điểm)</p>
                     <ul id="reachList" class="major-list"></ul>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>Phát triển bởi <span>Hiếu hắc ám (H13uG2)</span></p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
