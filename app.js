@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Load data from JSON
-    fetch('./data.json')
+    fetch('./datachuan.json')
         .then(response => response.json())
         .then(data => {
             majorsData = data;
